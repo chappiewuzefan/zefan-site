@@ -1,0 +1,37 @@
+title: "Zefan Wu"
+description: "Resume, blog posts, and notes by Zefan Wu."
+url: "https://chappiewuzefan.github.io"
+baseurl: "/MyResume"
+author:
+  name: "Zefan Wu"
+  email: "zefanwu.it@gmail.com"
+github:
+  repository_url: "https://github.com/chappiewuzefan/MyResume"
+
+markdown: kramdown
+highlighter: rouge
+permalink: /blog/:year/:month/:day/:title/
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      author: "Zefan Wu"
+
+collections:
+  posts:
+    output: true
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - latexmkrc
+  - .vscode
+

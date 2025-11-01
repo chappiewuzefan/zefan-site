@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<section class="card">
+  <h1 class="page-title">{{ page.title | default: "Blog" }}</h1>
+  {% if page.intro %}
+    <p>{{ page.intro }}</p>
+  {% endif %}
+  {% if site.posts.size > 0 %}
+    <ul class="post-list">
+      {% for post in site.posts %}
+        <li>
+          <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+          <p>{{ post.excerpt | strip_html | truncate: 180 }}</p>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No posts yet — stay tuned!</p>
+  {% endif %}
+</section>
