@@ -28,7 +28,7 @@ Latest resume PDF: [`out/resume.pdf`](out/resume.pdf)
 | Path / Item | Description |
 | --- | --- |
 | `_config.yml` | Site metadata, base URL, plugins (`jekyll-feed`, `jekyll-seo-tag`), permalink rules. |
-| `_layouts/` | Layout templates: `default` (global shell + styles), `page`, `post`, `blog`, `resume`. Inline script/CSS live here. |
+| `_layouts/` | Layout templates: `default` (global shell + styles + icons), `page`, `post`, `blog`, `resume`. |
 | `_posts/` | Markdown posts named `YYYY-MM-DD-title.md`. |
 | `blog/index.md` | Blog landing page using the `blog` layout to list recent posts. |
 | `index.md` | Landing page with a short intro and social links. |
