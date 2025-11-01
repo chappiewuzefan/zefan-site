@@ -60,6 +60,19 @@
         text-decoration: none;
       }
       .download-link:hover { text-decoration: underline; }
+      #comments {
+        width: clamp(320px, 96vw, 1600px);
+        margin: 1.5rem auto 0;
+        padding: 0 1rem 1.5rem;
+        font-size: 0.95rem;
+      }
+      #comments h2 {
+        margin: 0 0 1rem;
+        text-align: center;
+        font-weight: 600;
+        font-size: 1.25rem;
+        letter-spacing: 0.3px;
+      }
       @media (max-width: 768px) {
         header { font-size: 0.9rem; }
         footer { font-size: 0.85rem; padding: 0 1rem; }
@@ -78,25 +91,23 @@
         <iframe src="out/resume.pdf#zoom=FitH" title="Zefan Wu Resume"></iframe>
       </div>
     </main>
-    <section id="comments" style="padding: 1.5rem 1rem; display: flex; justify-content: center;">
-      <div style="width: clamp(320px, 90vw, 900px);">
-        <h2 style="text-align:center; margin: 0 0 1rem; font-weight: 600;">Message Board</h2>
-        <script src="https://giscus.app/client.js"
-                data-repo="chappiewuzefan/MyResume"
-                data-repo-id="R_kgDOQNHFkw"
-                data-category="General"
-                data-category-id="DIC_kwDOQNHFk84CxUf6"
-                data-mapping="pathname"
-                data-strict="0"
-                data-reactions-enabled="1"
-                data-emit-metadata="0"
-                data-input-position="bottom"
-                data-theme="preferred_color_scheme"
-                data-lang="en"
-                crossorigin="anonymous"
-                async>
-        </script>
-      </div>
+    <section id="comments">
+      <h2>Message Board</h2>
+      <script src="https://giscus.app/client.js"
+              data-repo="chappiewuzefan/MyResume"
+              data-repo-id="R_kgDOQNHFkw"
+              data-category="General"
+              data-category-id="DIC_kwDOQNHFk84CxUf6"
+              data-mapping="pathname"
+              data-strict="0"
+              data-reactions-enabled="1"
+              data-emit-metadata="0"
+              data-input-position="bottom"
+              data-theme="preferred_color_scheme"
+              data-lang="en"
+              crossorigin="anonymous"
+              async>
+      </script>
     </section>
     <footer>
       <a class="download-link" href="out/resume.pdf">Download PDF</a>
