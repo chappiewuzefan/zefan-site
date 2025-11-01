@@ -1,57 +1,86 @@
-# My Resume
+# Zefan Wu — Personal Site
 
-该仓库现在同时承载三块内容：LaTeX 简历源文件、在线简历页面（含留言板）、以及基于 Jekyll 的博客。
+This repository hosts three things in one place:
 
-最新版本的 PDF 保存在 `out/resume.pdf`，并通过 GitHub Pages 在线展示。
+1. LaTeX sources and fonts for my resume.
+2. An online resume page (with an embedded PDF and message board powered by Giscus).
+3. A lightweight Jekyll blog built from Markdown posts.
 
-- [下载 / 预览我的简历](out/resume.pdf)
-- 在线浏览网址：`https://chappiewuzefan.github.io/zefan-site/`
+Latest resume PDF: [`out/resume.pdf`](out/resume.pdf)  
+Live site: <https://chappiewuzefan.github.io/zefan-site/>
 
-仓库结构说明：
+---
 
-- `resume.tex` 及 `cv/`：LaTeX 简历源文件；
-- `fonts/`：简历字体；
-- `out/`：LaTeX 编译产物（PDF、synctex 等）；
-- `_layouts/`、`_posts/`、`_config.yml`：Jekyll 站点结构；
-- `resume.html`：在线简历页（包含 PDF 预览与留言板）；
-- `index.md`：博客首页，自动列出 `_posts` 下所有文章。
+## Project Layout
 
-如果你希望复现编译：
+| Path | Purpose |
+| --- | --- |
+| `resume.tex`, `cv/` | LaTeX resume source files |
+| `fonts/` | Custom fonts referenced by the resume |
+| `out/` | LaTeX build artifacts (PDF, synctex, etc.) |
+| `_layouts/`, `_posts/`, `_config.yml` | Jekyll templates and configuration |
+| `resume.html` | Online resume page (PDF viewer + message board) |
+| `index.md`, `blog/` | Blog index page and supporting files |
+| `Gemfile` | Bundler dependencies for local Jekyll preview |
 
-```bash
-latexmk -xelatex -synctex=1 -interaction=nonstopmode resume.tex
-```
+---
 
-欢迎提出改进建议或直接 fork 使用模板。
+## Resume Workflow (VS Code)
 
-## 本地编辑与自动编译
+- The LaTeX Workshop extension is configured to run `latexmk` automatically whenever `.tex` files are saved.
+- Artifacts are written to the `out/` directory.
+- Optional formatting via `latexindent` (install its Perl dependencies if needed).
 
-VS Code 安装了 LaTeX Workshop 插件，并配置为：
+This means updating the resume is as simple as editing the `.tex` files and hitting save; the PDF refreshes instantly.
 
-- 保存 `.tex` 文件时自动调用 `latexmk` 进行编译；
-- 编译产物（PDF、synctex 等）输出到 `out/` 目录；
-- 可选地调用 `latexindent` 进行格式化（需要满足依赖）。
+---
 
-因此只要修改任意 `*.tex` 文件并保存，VS Code 会立即出新 PDF。
+## Writing Blog Posts
 
-## 撰写博客文章
-
-Jekyll 会自动把 `_posts` 目录下的 Markdown 渲染成博客文章。新建文件时遵循 `YYYY-MM-DD-title.md` 命名，并写入以下模板：
+Jekyll consumes Markdown files in `_posts/` using the standard naming convention. Create a new post like this:
 
 ```markdown
 ---
-title: "文章标题"
-tags: [标签1, 标签2]
+title: "Post Title"
+tags: [tag-one, tag-two]
 ---
 
-正文内容，支持 Markdown 语法。
+Content begins here. Markdown is fully supported.
 ```
 
-保存后 `git add`、`git commit`、`git push`，GitHub Pages 会自动重新构建；博客首页会显示最新文章。
+Commit and push the post and GitHub Pages will rebuild the site automatically. The blog index lists posts chronologically.
 
-## GitHub Pages 配置
+---
 
-1. 在仓库的 **Settings → Pages** 中，将 **Source** 设置为 `Deploy from a branch`，选择 `main` 分支、`/ (root)` 文件夹。
-2. 保存后等待几分钟，GitHub 会自动构建静态站点，最终访问 `https://<你的用户名>.github.io/zefan-site/` 即可在线查看简历。
+## Local Preview (optional)
 
-> `resume.html` 会嵌入 `out/resume.pdf` 并展示留言板（Giscus）。只要同步更新 PDF 并推送，页面就会保持最新内容。留言会同步到仓库的 Discussions。
+If you want to preview everything locally, install the Ruby dependencies into `vendor/bundle` and run Jekyll:
+
+```bash
+bundle config set --local path 'vendor/bundle'
+bundle install
+bundle exec jekyll serve
+```
+
+Then browse to <http://127.0.0.1:4000/zefan-site/>.
+
+---
+
+## GitHub Pages Deployment
+
+1. In **Settings → Pages**, set the source to `Deploy from a branch`, branch `main`, folder `/ (root)`.
+2. Every push triggers a new Jekyll build. The production site is served from <https://chappiewuzefan.github.io/zefan-site/>.
+
+`resume.html` embeds the compiled PDF and exposes a “Resume Message Board”. Messages are stored as GitHub Discussions under the repository.
+
+---
+
+## Message Board / Discussions
+
+Giscus uses Discussions to store comments. The embed on `resume.html` is configured with `data-term="Resume Message Board"`; adjust that value if you ever rename the section.
+
+---
+
+## Contributing / Forking
+
+Feel free to fork the project, adapt the LaTeX template, or use the Jekyll setup as a starting point for your own personal site. Pull requests and suggestions are welcome.
