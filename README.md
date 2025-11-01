@@ -35,3 +35,4 @@ VS Code 安装了 LaTeX Workshop 插件，并配置为：
 2. 保存后等待几分钟，GitHub 会自动构建静态站点，最终访问 `https://<你的用户名>.github.io/MyResume/` 即可在线查看简历。
 
 > `index.html` 会自动嵌入 `out/resume.pdf`。只要同步更新 PDF 并推送，页面也会展示最新版本。
+> 页面底部还集成了基于 GitHub Discussions 的留言板（Giscus）。访客可使用自己的 GitHub 账号留言，内容会同步到仓库的 Discussions。
