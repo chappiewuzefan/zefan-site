@@ -93,6 +93,17 @@
         font-size: 0.85rem;
         color: var(--muted);
       }
+      .footer-meta {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.6rem;
+        margin-bottom: 0.6rem;
+        flex-wrap: wrap;
+      }
+      .footer-meta .dot {
+        opacity: 0.5;
+      }
       .card {
         background: var(--panel);
         border-radius: 16px;
@@ -247,8 +258,58 @@
     </main>
     <footer class="site-footer">
       <div class="container">
-        © {{ site.time | date: '%Y' }} {{ site.title }} · Crafted with LaTeX, Jekyll, and a healthy dose of curiosity.
+        <div class="footer-meta">
+          <span id="site-uptime">Online for 0 days</span>
+          <span class="dot">•</span>
+          <span id="page-views">Loading views…</span>
+        </div>
+        <div>
+          © {{ site.time | date: '%Y' }} {{ site.title }} · Crafted with LaTeX, Jekyll, and a healthy dose of curiosity.
+        </div>
       </div>
     </footer>
+    <script>
+      (function() {
+        const launchDate = new Date('2025-11-1T00:00:00Z'); // site launch timestamp
+        function updateUptime() {
+          const now = new Date();
+          const diff = now - launchDate;
+          const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+          const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+          const minutes = Math.floor((diff / (1000 * 60)) % 60);
+          const parts = [];
+          if (days > 0) parts.push(days + ' day' + (days === 1 ? '' : 's'));
+          if (hours > 0) parts.push(hours + ' hour' + (hours === 1 ? '' : 's'));
+          parts.push(minutes + ' min');
+          document.getElementById('site-uptime').textContent = 'Online for ' + parts.join(' ');
+        }
+        updateUptime();
+        setInterval(updateUptime, 60000);
+      })();
+    </script>
+    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const pvTarget = document.getElementById('page-views');
+        function applyBusuanzi() {
+          if (typeof window.busuanzi !== 'undefined') {
+            const pv = document.getElementById('busuanzi_value_site_pv');
+            const uv = document.getElementById('busuanzi_value_site_uv');
+            if (pv && uv) {
+              pvTarget.textContent = `Visits: ${pv.textContent} · Visitors: ${uv.textContent}`;
+              return true;
+            }
+          }
+          return false;
+        }
+        const observer = new MutationObserver(applyBusuanzi);
+        observer.observe(document.body, { childList: true, subtree: true });
+        applyBusuanzi();
+      });
+    </script>
+    <span id="busuanzi_container_site_pv" style="display:none;"></span>
+    <span id="busuanzi_value_site_pv" style="display:none;"></span>
+    <span id="busuanzi_container_site_uv" style="display:none;"></span>
+    <span id="busuanzi_value_site_uv" style="display:none;"></span>
   </body>
 </html>

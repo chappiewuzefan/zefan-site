@@ -71,7 +71,7 @@ Then browse to <http://127.0.0.1:4000/zefan-site/>.
 1. In **Settings → Pages**, set the source to `Deploy from a branch`, branch `main`, folder `/ (root)`.
 2. Every push triggers a new Jekyll build. The production site is served from <https://chappiewuzefan.github.io/zefan-site/>.
 
-`resume.html` embeds the compiled PDF and exposes a “Resume Message Board”. Messages are stored as GitHub Discussions under the repository.
+`resume.html` embeds the compiled PDF, shows a running site uptime label, and exposes a “Resume Message Board”. Messages are stored as GitHub Discussions under the repository. Visitor statistics are collected via [Busuanzi](https://busuanzi.ibruce.info/) and displayed in the footer.
 
 ---
 
