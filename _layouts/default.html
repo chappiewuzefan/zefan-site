@@ -270,10 +270,17 @@
     </footer>
     <script>
       (function() {
-        const launchDate = new Date('2025-11-1T00:00:00Z'); // site launch timestamp
+        const launchDate = new Date(Date.UTC(2025, 10, 1, 0, 0, 0));
+        const uptimeEl = document.getElementById('site-uptime');
+        if (!uptimeEl) return;
         function updateUptime() {
           const now = new Date();
-          const diff = now - launchDate;
+          let diff = now.getTime() - launchDate.getTime();
+          if (isNaN(diff)) {
+            uptimeEl.textContent = 'Online time unavailable';
+            return;
+          }
+          if (diff < 0) diff = 0;
           const days = Math.floor(diff / (1000 * 60 * 60 * 24));
           const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
           const minutes = Math.floor((diff / (1000 * 60)) % 60);
@@ -281,7 +288,7 @@
           if (days > 0) parts.push(days + ' day' + (days === 1 ? '' : 's'));
           if (hours > 0) parts.push(hours + ' hour' + (hours === 1 ? '' : 's'));
           parts.push(minutes + ' min');
-          document.getElementById('site-uptime').textContent = 'Online for ' + parts.join(' ');
+          uptimeEl.textContent = 'Online for ' + parts.join(' ');
         }
         updateUptime();
         setInterval(updateUptime, 60000);
