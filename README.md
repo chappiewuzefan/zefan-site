@@ -19,6 +19,16 @@ latexmk -xelatex -synctex=1 -interaction=nonstopmode resume.tex
 
 欢迎提出改进建议或直接 fork 使用模板。
 
+## 本地编辑与自动编译
+
+VS Code 安装了 LaTeX Workshop 插件，并配置为：
+
+- 保存 `.tex` 文件时自动调用 `latexmk` 进行编译；
+- 编译产物（PDF、synctex 等）输出到 `out/` 目录；
+- 可选地调用 `latexindent` 进行格式化（需要满足依赖）。
+
+因此只要修改任意 `*.tex` 文件并保存，VS Code 会立即出新 PDF。
+
 ## GitHub Pages 配置
 
 1. 在仓库的 **Settings → Pages** 中，将 **Source** 设置为 `Deploy from a branch`，选择 `main` 分支、`/ (root)` 文件夹。

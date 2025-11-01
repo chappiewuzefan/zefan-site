@@ -1,17 +1,17 @@
 # Fdb version 4
-["biber out/resume"] 1760522678.87631 "out/resume.bcf" "out/resume.bbl" "out/resume" 1760532604.81183 0
-  "out/resume.bcf" 1760532604.42638 108021 61106d0924a05c5218cd754067f6825e "xelatex"
+["biber out/resume"] 1760522678.87631 "out/resume.bcf" "out/resume.bbl" "out/resume" 1761966024.70099 0
+  "out/resume.bcf" 1761966024.32895 108021 61106d0924a05c5218cd754067f6825e "xelatex"
   (generated)
   "out/resume.bbl"
   "out/resume.blg"
   (rewritten before read)
-["xdvipdfmx"] 1760532604.48135 "out/resume.xdv" "out/resume.pdf" "out/resume" 1760532604.81326 0
-  "out/resume.xdv" 1760532604.42723 63052 bb806795560d31e20aee57127f00c8a8 "xelatex"
+["xdvipdfmx"] 1761966024.37497 "out/resume.xdv" "out/resume.pdf" "out/resume" 1761966024.70232 0
+  "out/resume.xdv" 1761966024.32953 63052 a1ed1fd915d8858000528a22fe5b0e0b "xelatex"
   (generated)
   "out/resume.pdf"
   (rewritten before read)
-["xelatex"] 1760532602.37643 "/Users/frank/Desktop/Zefan Wu/简历/resume.tex" "out/resume.xdv" "resume" 1760532604.81194 0
-  "/Users/frank/Desktop/Zefan Wu/简历/resume.tex" 1760532602.3018 3533 8be676ca8b39a55389108e05fd3b0b0a ""
+["xelatex"] 1761966022.53317 "/Users/frank/Desktop/Zefan Wu/简历/resume.tex" "out/resume.xdv" "resume" 1761966024.70103 0
+  "/Users/frank/Desktop/Zefan Wu/简历/resume.tex" 1760532995.13398 3533 8be676ca8b39a55389108e05fd3b0b0a ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm" 1136768653 1528 abec98dbc43e172678c11b3b9031252a ""
@@ -189,11 +189,11 @@
   "cv/education.tex" 1760437209.22048 1113 b27052dfa469ac93b56b94b609f9fc93 ""
   "cv/experience.tex" 1760437209.21395 7266 e172a8c9d2412c8bdc204ee8ef14a209 ""
   "cv/skills.tex" 1760437209.19393 989 dd54c9909cfbf6c57d4ad88b8cd03ebc ""
-  "cv/summary.tex" 1760437209.1903 795 321dec9768e27043ba75f5a492057439 ""
-  "out/resume.aux" 1760532604.42374 189 21dc2a5d879d70f42896f240ffe91453 "xelatex"
+  "cv/summary.tex" 1761966022.4187 795 321dec9768e27043ba75f5a492057439 ""
+  "out/resume.aux" 1761966024.32672 189 21dc2a5d879d70f42896f240ffe91453 "xelatex"
   "out/resume.bbl" 1760522680.24866 466 76d65a242ec496c9b4361af646ff12cb "biber out/resume"
-  "out/resume.run.xml" 1760532604.42717 2392 d6d0ebd8959311cd61d438b6a0625acb "xelatex"
-  "resume.tex" 1760532602.3018 3533 8be676ca8b39a55389108e05fd3b0b0a ""
+  "out/resume.run.xml" 1761966024.32947 2392 d6d0ebd8959311cd61d438b6a0625acb "xelatex"
+  "resume.tex" 1760532995.13398 3533 8be676ca8b39a55389108e05fd3b0b0a ""
   "russell.cls" 1760532601.04328 32566 912baf6dd805e136aebdd01bd7fbf756 ""
   (generated)
   "out/resume.aux"
