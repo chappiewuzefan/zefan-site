@@ -1,4 +1,0 @@
-interface:
-  display_name: "Resume Impact Tailor"
-  short_description: "Rewrite resumes into hiring-value impact statements."
-  default_prompt: "Use $resume-impact-tailor to rewrite my resume into impact-driven bullets and tailor it to this JD."
