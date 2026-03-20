@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.10.14)  20 MAR 2026 16:56
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.10.14)  20 MAR 2026 21:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1421,62 +1421,64 @@ Package biblatex Info: ... file 'resume.bbl' found.
 (out/resume.bbl)
 Package biblatex Info: Reference section=0 on input line 71.
 Package biblatex Info: Reference segment=0 on input line 71.
-\headertextwidth=\skip111
-\headerphotowidth=\skip112
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.95116pt on input line 76.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.6658pt on input line 76.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.47559pt on input line 76.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 10.94882pt on input line 76.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 7.66417pt on input line 76.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.47441pt on input line 76.
 LaTeX Font Info:    Font shape `TU/Roboto(1)/m/n' will be
-(Font)              scaled to size 20.0pt on input line 76.
-LaTeX Font Info:    Font shape `TU/Roboto(1)/m/n' will be
-(Font)              scaled to size 6.8pt on input line 76.
-
-Overfull \hbox (1.46pt too wide) in paragraph at lines 76--76
-[]$[]$ $[]$$[]$ 
- []
-
-(./cv/summary.tex
+(Font)              scaled to size 20.0pt on input line 74.
+LaTeX Font Info:    Font shape `TU/Roboto(1)/b/n' will be
+(Font)              scaled to size 20.0pt on input line 74.
+LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
+(Font)              scaled to size 8.8pt on input line 76.
+ (./cv/summary.tex
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
 (Font)              scaled to size 16.0pt on input line 4.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/b/n' will be
 (Font)              scaled to size 16.0pt on input line 4.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
 (Font)              scaled to size 9.0pt on input line 10.
-) (./cv/experience.tex
-LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 26.
+) (./cv/skills.tex
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/b/n' will be
-(Font)              scaled to size 10.0pt on input line 26.
+(Font)              scaled to size 9.0pt on input line 11.
+) (./cv/experience.tex
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 10.95116pt on input line 28.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 7.6658pt on input line 28.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 5.47559pt on input line 28.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 10.94882pt on input line 28.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 7.66417pt on input line 28.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 5.47441pt on input line 28.
+LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
+(Font)              scaled to size 10.0pt on input line 28.
+LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/b/n' will be
+(Font)              scaled to size 10.0pt on input line 28.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/sl' in size <9> not avail
 able
 (Font)              Font shape `TU/SourceSansPro(1)/m/it' tried instead on inpu
-t line 26.
+t line 28.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/it' will be
-(Font)              scaled to size 9.0pt on input line 26.
+(Font)              scaled to size 9.0pt on input line 28.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 26.
+(Font)              scaled to size 8.0pt on input line 28.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/sl' in size <8> not avail
 able
 (Font)              Font shape `TU/SourceSansPro(1)/m/it' tried instead on inpu
-t line 26.
+t line 28.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/it' will be
-(Font)              scaled to size 8.0pt on input line 26.
+(Font)              scaled to size 8.0pt on input line 28.
+LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
+(Font)              scaled to size 8.6pt on input line 28.
+LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/b/n' will be
+(Font)              scaled to size 8.6pt on input line 28.
 
 
 [1
 
 ]) (./cv/education.tex)
 LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/b/n' will be
-(Font)              scaled to size 10.95pt on input line 100.
+(Font)              scaled to size 10.95pt on input line 108.
 
 
 [2] (out/resume.aux)
@@ -1489,12 +1491,12 @@ Package logreq Info: Writing requests to 'resume.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40251 strings out of 468389
- 820398 string characters out of 5440619
- 1823595 words of memory out of 5000000
- 68147 multiletter control sequences out of 15000+600000
- 630509 words of font info for 128 fonts, out of 8000000 for 9000
+ 40255 strings out of 468389
+ 820659 string characters out of 5440619
+ 1823639 words of memory out of 5000000
+ 68149 multiletter control sequences out of 15000+600000
+ 630525 words of font info for 130 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 131i,12n,135p,564b,852s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 131i,11n,135p,564b,852s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on out/resume.xdv (2 pages, 60400 bytes).
+Output written on out/resume.xdv (2 pages, 52592 bytes).

@@ -172,6 +172,7 @@
 \newcommand*{\entrylocationstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\slshape\color{russell} #1}}
 \newcommand*{\descriptionstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\upshape\color{text} #1}}
 \newcommand*{\entrysummarystyle}[1]{{\fontsize{9pt}{1.16em}\bodyfont\color{darktext} #1}}
+\newcommand*{\entrydetailstyle}[1]{{\fontsize{8.6pt}{1.12em}\bodyfontlight\upshape\color{text} #1}}
 \newcommand*{\entryitemstyle}{\fontsize{9pt}{1.12em}\bodyfontlight\upshape\color{text}}
 
 % For elements of subentry
@@ -725,6 +726,12 @@
 % Usage: \cvsummary{<summary>}
 \newcommand*{\cvsummary}[1]{%
   \entrysummarystyle{#1}\par\vspace{\cvsummarytobulletskip}
+}
+
+% Define a detail line for cventry metadata such as Description or Technologies
+% Usage: \cvdetail{<detail-line>}
+\newcommand*{\cvdetail}[1]{%
+  \entrydetailstyle{#1}\par
 }
 
 
