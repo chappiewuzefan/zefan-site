@@ -1,8 +1,7 @@
 %-------------------------------------------------------------------------------
 %	SECTION TITLE
 %-------------------------------------------------------------------------------
-
-\cvsection{University Projects}
+\cvsection{Selected Projects}
 
 
 %-------------------------------------------------------------------------------
@@ -10,100 +9,30 @@
 %-------------------------------------------------------------------------------
 \begin{cventries}
 
-\cventry
-    {Australian National University} % Organisation
-    {Binaural Signal Generation MCU Project} % Project
-    {Canberra, Australia} % Location
-    {May. 2023 - Jun. 2023} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of project
-        \item {Generated binaural signals from an audio file, utilizing a Microcontroller and MPU-6050}
-        \item {Developed a system capable of measuring the azimuth angle with high precision, integrating it into the audio processing to create a spatial sound experience, and displaying the angle in real-time both on a connected LCD and through MATLAB visualization.}
-        \item {Implemented data processing techniques like the "Overlap Save" method to handle large music files efficiently, overcoming the RAM limitation of the microcontroller and ensuring seamless audio generation.}
-        \item {Designed the system to work with various communication protocols such as I2C, UART, and SPI, facilitating smooth integration and communication between multiple components including IMU, LCD, and SD-Card reader.}
-        \item {Achieved efficient data communication and handling by optimizing the data transfer from music files to convolution, potentially leading to an increase in block size and a decrease in SD-Card access times.}
-        \item {\textbf{Technical Skills:} Microcontroller Programming, Signal Processing, MATLAB, System Integration, I2C/UART/SPI Protocols, Real-time Data Visualization}
-        \item {\textbf{Project Repository:} \url{https://github.com/chappiewuzefan/MCU_Project}}
-      \end{cvitems}
-    }
-
-%---------------------------------------------------------
   \cventry
-    {Australian National University} % Organisation
-    {Smart Home Controller Project} % Project
-    {Canberra, Australia} % Location
-    {Mar 2023 - Apr 2023} % Date(s)
+    {Professional Project} % Organisation
+    {ec-phy-agent \& ec-phy-service} % Project
+    {Energy Systems} % Location
+    {Recent Work} % Date(s)
     {
+      \cvsummary{Developed device-side and backend services for telemetry, WiFi reconnect logic, status logging, and operational monitoring in Linux-based energy controller environments.}
       \begin{cvitems} % Description(s) of project
-        \item {Designed and developed a smart home controller using a Basys3 FPGA board, integrating two vital functionalities: Secure Garage Door Control and Climate Control (Home Heating and Cooling), utilizing Verilog programming language.}
-        \item {Implemented a secure garage door module featuring a finite state machine (FSM) with 14 distinct states, facilitating features such as pin-code security, alarm system, and collision detection, enhancing home security and automation.}
-        \item {Developed a climate control module to regulate home heating and cooling, with an FSM to manage different operational stages based on user-defined and external temperature inputs, ensuring energy-efficient home climate management.}
-        \item {Achieved seamless integration of both modules into a hierarchical structure, optimizing resource utilization and system management. Designed user interfaces with LED indicators and Seven-Segment Displays (SSDs) to provide real-time status and feedback.}
-        \item {\textbf{Technical Skills:} Verilog, Digital Design, FPGA, Xilinx Vivado, System Integration, Finite State Machine (FSM)}
-        \item {\textbf{Project Repository:} \url{https://github.com/chappiewuzefan/Smart-Home-Controller-Project}}
+        \item {Added validation paths based on ping checks, interface state, and log analysis so connectivity failures could be diagnosed more consistently in the field.}
+        \item {Maintained WiFi status logging and monitoring records that improved traceability during incidents, handovers, and post-issue review.}
       \end{cvitems}
     }
 
-%---------------------------------------------------------
-  % \cventry
-  %   {Australian National University} % Organisation
-  %   {Cloth Simulation Project} % Project
-  %   {Canberra, Australia} % Location
-  %   {Sept 2022 ‐ Oct 2022} % Date(s)
-  %   {
-  %     \begin{cvitems} % Description(s) of project
-  %       \item {Developed a cloth simulation using C++ to visualize the process of cloth dropping and colliding with a small ball. The code is available on  \url{https://github.com/chappiewuzefan/Cloth-Simulation}}
-  %       \item {Implemented OpenMP for parallel computation with multiple threads, addressing dependency between nodes and overcoming cache unfriendly problems.}
-  %       \item {Achieved a 40x acceleration compared to the original version and secured a Top 10 ranking.}
-  %       \item {\textbf{Technical Skills:} C, Python, SSE, AVX, OpenMP, Intel Advisor, CMake}
-  %     \end{cvitems}
-  %   }
-    
-%---------------------------------------------------------
-
-% \cventry
-%     {Australian National University} % Organisation
-%     {Passing the Message Concurrently} % Project
-%     {Canberra, Australia} % Location
-%     {Sep. 2019 ‐ Nov. 2019} % Date(s)
-%     {
-%       \begin{cvitems} % Description(s) of project
-%         \item {Established a connection between two routers without prior knowledge of the network topology, implementing a Dijkstra-like shortest path algorithm for efficient intercommunication.}
-%         \item {Designed a system that accepted only the latest messages and discarded outdated ones, optimizing communication efficiency.}
-%         \item {\textbf{Technical Skills:} Ada}
-%       \end{cvitems}
-%     }
-
-%---------------------------------------------------------
-  % \cventry
-  %   {Australian National University} % Organisation
-  %   {Gliding in space} % Project
-  %   {Canberra, Australia} % Location
-  %   {} % Date(s)
-  %   {
-  %     \begin{cvitems} % Description(s) of project
-  %       \item {Developed a coordinated, concurrent, and distributed system to manage resources and behaviors, maximizing the lifespan of multiple 3D space vehicles in a swarm.}
-  %       \item {Successfully achieved all four project stages: central coordinator implementation, fully distributed system, multiple energy globes management, and finding harmony between various elements. Code and report available at:  \url{https://github.com/chappiewuzefan/Gliding-in-space}}
-  %       \item {\textbf{Technical Skills:} Ada}
-  %     \end{cvitems}
-  %   }
-
-
-    
-%---------------------------------------------------------
-  % \cventry
-  %   {Australian National University} % Organisation
-  %   {Android Games} % Project
-  %   {Canberra, Australia} % Location
-  %   {} % Date(s)
-  %   {
-  %     \begin{cvitems} % Description(s) of project
-  %       \item {Developed an interactive Android mobile application featuring a 2-player ice hockey game and a tile puzzle game.}
-  %       \item {Constructed back-end endpoints for storing and fetching game progress, and created unit test cases for objects and functions.}
-  %       \item {\textbf{Technical Skills:} Android Studio, Java}
-  %     \end{cvitems}
-  %   }
-
-%---------------------------------------------------------
+  \cventry
+    {Professional Project} % Organisation
+    {GEPubber, Messaging \& WiFi Driver Packaging} % Project
+    {Energy Systems} % Location
+    {Recent Work} % Date(s)
+    {
+      \cvsummary{Extended messaging and connectivity support for Linux-based energy devices, covering reconnect events, ZeroMQ publisher flows, and Realtek WiFi driver packaging.}
+      \begin{cvitems} % Description(s) of project
+        \item {Implemented reconnect-related message support and validation tooling across publisher paths and client libraries, reducing repeated setup work during debugging.}
+        \item {Built and tested reproducible WiFi driver packages in Docker-based environments, making device setup and validation more reliable for engineering use.}
+      \end{cvitems}
+    }
 
 \end{cventries}
