@@ -147,7 +147,7 @@
 \newcommand*{\headerfontlight}{\robotolight}
 \newcommand*{\footerfont}{\sourcesanspro}
 \newcommand*{\bodyfont}{\sourcesanspro}
-\newcommand*{\bodyfontlight}{\sourcesansprolight}
+\newcommand*{\bodyfontlight}{\sourcesanspro}
 
 %-------------------------------------------------------------------------------
 %                Configuration for styles
@@ -171,8 +171,8 @@
 \newcommand*{\entrydatestyle}[1]{{\fontsize{8pt}{1em}\bodyfontlight\slshape\color{graytext} #1}}
 \newcommand*{\entrylocationstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\slshape\color{russell} #1}}
 \newcommand*{\descriptionstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\upshape\color{text} #1}}
-\newcommand*{\entrysummarystyle}[1]{{\fontsize{9pt}{1.08em}\bodyfont\color{darktext} #1}}
-\newcommand*{\entryitemstyle}{\fontsize{9pt}{1em}\bodyfontlight\upshape\color{text}}
+\newcommand*{\entrysummarystyle}[1]{{\fontsize{9pt}{1.16em}\bodyfont\color{darktext} #1}}
+\newcommand*{\entryitemstyle}{\fontsize{9pt}{1.12em}\bodyfontlight\upshape\color{text}}
 
 % For elements of subentry
 \newcommand*{\subentrytitlestyle}[1]{{\fontsize{8pt}{1em}\bodyfont\mdseries\color{graytext} #1}}
@@ -390,9 +390,11 @@
 \newcommand{\acvSectionTopSkip}{3mm}
 \newcommand{\acvSectionContentTopSkip}{2.5mm}
 % Adjustable vertical spacing for entries and item blocks
-\newcommand{\cventrytopskip}{0.8mm}
-\newcommand{\cvitemstopskip}{0.6mm}
-\newcommand{\cvitemsbottomskip}{0.6mm}
+\newcommand{\cventrytopskip}{1.3mm}
+\newcommand{\cventrymetatocontentskip}{-0.25mm}
+\newcommand{\cvsummarytobulletskip}{0.55mm}
+\newcommand{\cvitemstopskip}{0.15mm}
+\newcommand{\cvitemsbottomskip}{1.15mm}
 
 
 %-------------------------------------------------------------------------------
@@ -634,9 +636,9 @@
   \setlength{\extrarowheight}{0pt}
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
     \ifempty{#2#3}
-      {\entrypositionstyle{#1} & \entrydatestyle{#4} \\}
+      {\entrypositionstyle{#1} & \entrydatestyle{#4} \\[\cventrymetatocontentskip]}
       {\entrytitlestyle{#2} & \entrylocationstyle{#3} \\
-      \entrypositionstyle{#1} & \entrydatestyle{#4} \\}
+      \entrypositionstyle{#1} & \entrydatestyle{#4} \\[\cventrymetatocontentskip]}
     \multicolumn{2}{L{\textwidth}}{%
       \begin{minipage}[t]{\textwidth}%
         #5%
@@ -710,7 +712,7 @@
   \vspace{\cvitemstopskip}
   \begin{justify}
   \entryitemstyle
-  \begin{itemize}[leftmargin=2ex, nosep, noitemsep]
+  \begin{itemize}[leftmargin=2ex, topsep=0pt, itemsep=0.18em, parsep=0pt]
     \setlength{\parskip}{0pt}
     \renewcommand{\labelitemi}{\bullet}
 }{%
@@ -722,7 +724,7 @@
 % Define a summary paragraph for cventry before bullet items
 % Usage: \cvsummary{<summary>}
 \newcommand*{\cvsummary}[1]{%
-  \entrysummarystyle{#1}\par
+  \entrysummarystyle{#1}\par\vspace{\cvsummarytobulletskip}
 }
 
 
