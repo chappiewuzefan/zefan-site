@@ -2,7 +2,7 @@ PWD /Users/frank/Desktop/Zefan Wu/简历
 INPUT /usr/local/texlive/2025/texmf.cnf
 INPUT /usr/local/texlive/2025/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2025/texmf-var/web2c/xetex/xelatex.fmt
-INPUT /Users/frank/Desktop/Zefan Wu/简历/resume.tex
+INPUT resume.tex
 OUTPUT out/resume.log
 INPUT ./russell.cls
 INPUT russell.cls
@@ -344,16 +344,13 @@ INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm
 INPUT ./cv/summary.tex
 INPUT ./cv/summary.tex
 INPUT cv/summary.tex
-INPUT ./cv/education.tex
-INPUT ./cv/education.tex
-INPUT cv/education.tex
-INPUT ./cv/skills.tex
-INPUT ./cv/skills.tex
-INPUT cv/skills.tex
 INPUT ./cv/experience.tex
 INPUT ./cv/experience.tex
 INPUT cv/experience.tex
 OUTPUT out/resume.xdv
+INPUT ./cv/education.tex
+INPUT ./cv/education.tex
+INPUT cv/education.tex
 INPUT out/resume.aux
 INPUT out/resume.run.xml
 OUTPUT out/resume.run.xml

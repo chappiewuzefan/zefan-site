@@ -171,6 +171,8 @@
 \newcommand*{\entrydatestyle}[1]{{\fontsize{8pt}{1em}\bodyfontlight\slshape\color{graytext} #1}}
 \newcommand*{\entrylocationstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\slshape\color{russell} #1}}
 \newcommand*{\descriptionstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\upshape\color{text} #1}}
+\newcommand*{\entrysummarystyle}[1]{{\fontsize{9pt}{1.08em}\bodyfont\color{darktext} #1}}
+\newcommand*{\entryitemstyle}{\fontsize{9pt}{1em}\bodyfontlight\upshape\color{text}}
 
 % For elements of subentry
 \newcommand*{\subentrytitlestyle}[1]{{\fontsize{8pt}{1em}\bodyfont\mdseries\color{graytext} #1}}
@@ -389,7 +391,7 @@
 \newcommand{\acvSectionContentTopSkip}{2.5mm}
 % Adjustable vertical spacing for entries and item blocks
 \newcommand{\cventrytopskip}{0.8mm}
-\newcommand{\cvitemstopskip}{-4.0mm}
+\newcommand{\cvitemstopskip}{0.6mm}
 \newcommand{\cvitemsbottomskip}{0.6mm}
 
 
@@ -635,7 +637,11 @@
       {\entrypositionstyle{#1} & \entrydatestyle{#4} \\}
       {\entrytitlestyle{#2} & \entrylocationstyle{#3} \\
       \entrypositionstyle{#1} & \entrydatestyle{#4} \\}
-    \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}}
+    \multicolumn{2}{L{\textwidth}}{%
+      \begin{minipage}[t]{\textwidth}%
+        #5%
+      \end{minipage}%
+    }
   \end{tabular*}%
 }
 
@@ -703,6 +709,7 @@
 \newenvironment{cvitems}{%
   \vspace{\cvitemstopskip}
   \begin{justify}
+  \entryitemstyle
   \begin{itemize}[leftmargin=2ex, nosep, noitemsep]
     \setlength{\parskip}{0pt}
     \renewcommand{\labelitemi}{\bullet}
@@ -710,6 +717,12 @@
   \end{itemize}
   \end{justify}
   \vspace{\cvitemsbottomskip}
+}
+
+% Define a summary paragraph for cventry before bullet items
+% Usage: \cvsummary{<summary>}
+\newcommand*{\cvsummary}[1]{%
+  \entrysummarystyle{#1}\par
 }
 
 
